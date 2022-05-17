@@ -15,6 +15,7 @@ const App = () => {
   return (
     <Container>
       <Head />
+      {/* I decided for the moment to pass the state and setState, one of the best practices was to use redux but for time I opted for the other option */}
       <Search state={state} setState={setState} />
       <Group state={state} setState={setState} />
 

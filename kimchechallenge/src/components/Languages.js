@@ -13,6 +13,7 @@ const Languages = ({ countries }) => {
     const selectLanguages = () => {
       let newLanguages = [];
 
+      // A mapping is being carried out to be able to show only the languages that match the language of each city.
       const results = data?.languages.forEach(({ name }) => {
         countries.map(({ languages }) => {
           const select = languages.map((language) => language.name);
