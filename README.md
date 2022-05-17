@@ -1,7 +1,7 @@
 # Desafío para Software Engineers
 
-Nombre postulante: [TU NOMBRE]
-Link a la app en producción: [LINK DEL DEPLOY]
+Nombre postulante: Yadira
+Link a la app en producción: https://challenge-q8z06q6nz-bluezin.vercel.app/
 
 ## Instrucciones
 
@@ -37,3 +37,9 @@ Acá van algunas cosas que pueden ser útiles (o no 👀):
 - [Eslint](https://eslint.org/)
 - [Eslint airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
 - [Husky](https://www.npmjs.com/package/husky)
+
+## Respuesta a la pregunta
+ - Pregunta: `"La tabla que contiene la información correspondiente a la asistencia diaria de un niño en un colegio tiene 90 millones de filas. Todas las tablas del sistema existen en la misma BDD en MySQL. La lógica del backend que actualiza la información correspondiente al pasar la asistencia tiene un tiempo de servicio p95 de 10 segundos. El equipo está interesado en bajar este tiempo para mejorar la experiencia del usuario (y porque nos gusta pensar en Kimche como un Ferrari). ¿Qué propondrías para enfrentar el problema? Esta pregunta es abierta, no hay respuestas malas. Puedes proponer arquitectura, tecnologías, diseño, etc."`
+ - Respuesta: `Primero cada vez que se quiere actualizar la data de la asistencia del niño crearia una fila más, esto no tomaría tanto tiempo, y despues de un cierto tiempo iría eliminado la filas que ya hayan caducado. Usaría tecnologías como Ruby on Rails, Posgresql o MySQL.`
+ 
+
