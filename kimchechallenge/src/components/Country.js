@@ -1,5 +1,10 @@
 import React from "react";
-import { Container, CountryAttribute, CountryTitle } from "../styles/country";
+import {
+  Container,
+  CountryAttribute,
+  CountryTitle,
+  LanguageList,
+} from "../styles/country";
 
 const Country = ({
   name,
@@ -7,9 +12,9 @@ const Country = ({
   phone,
   currency,
   native,
-  continent,
   emoji,
-  emojiU,
+  continent,
+  languages,
 }) => {
   return (
     <Container>
@@ -34,6 +39,19 @@ const Country = ({
         Native:
         <span>{native}</span>
       </CountryAttribute>
+      <CountryAttribute>
+        Continent:
+        <span>{continent.name}</span>
+      </CountryAttribute>
+
+      <LanguageList>
+        <p>Language list:</p>
+        <div className="langaugeList">
+          {languages.map((language) => (
+            <i key={language.code}>{language.name}</i>
+          ))}
+        </div>
+      </LanguageList>
     </Container>
   );
 };

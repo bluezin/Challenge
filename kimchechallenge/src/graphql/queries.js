@@ -28,4 +28,26 @@ const SEARCH_COUNTRY = gql`
   }
 `;
 
-export { SEARCH_COUNTRY };
+const LANGUAGES = gql`
+  query {
+    languages {
+      code
+      name
+      native
+    }
+  }
+`
+
+const CONTINENTS = gql`
+  query {
+    continents {
+      code
+      name
+      countries {
+        name
+      }
+    }
+  }
+`
+
+export { SEARCH_COUNTRY, LANGUAGES, CONTINENTS };
