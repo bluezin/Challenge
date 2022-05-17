@@ -13,6 +13,7 @@ const Continents = ({ countries }) => {
     const selectContinents = () => {
       let newContinents = [];
 
+      // A mapping is being carried out to be able to show only the continents that match the continents of each city.
       const results = data?.continents.map(({ name }) => {
         countries.map(({ continent }) => {
           const conditional = continent.name === name;
