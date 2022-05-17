@@ -16,6 +16,7 @@ const Search = ({ state, setState }) => {
   };
 
   useEffect(() => {
+    // Every time the result is updated, there will be a new state
     setState({
       ...state,
       countries: { ...results, data: results.data?.countries },
